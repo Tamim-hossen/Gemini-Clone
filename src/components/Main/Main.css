@@ -1,0 +1,136 @@
+.main{
+    margin-left: auto;
+    flex:1;
+    min-height:100vh ;
+    padding-bottom: 15vh;
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.main .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px;
+    color: #585858;
+}
+.main .nav img{
+    width: 40px ;
+    border-radius: 50%;
+}
+.mainContainer{
+max-width: 900px;
+margin: auto;
+}
+.main .greet{
+margin: 50px 0px;
+font-size: 56px;
+color: #c4c7c5;
+font-weight: 500;
+padding: 20px;
+}
+.main .greet span {
+    background: linear-gradient(45deg, #4b90ff, #ff5546, #4b90ff);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s ease-in-out infinite;
+}
+.main .greet p{
+    background: -webkit-linear-gradient(16deg,#03ffc4,#fd3849,#03ffc4);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap: 15px;
+    padding: 20px;
+}
+.main .card{
+    height: 200px;
+    padding: 15px;
+    background-color:#f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.main .card img{
+    width: 30px;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 10px;
+    right: 10px;
+}
+.main .card p{
+    color: #585858;
+    font-size: 17px;
+}
+.main .card:hover{
+    background-color: #dfe4ea;
+}
+.main .mainBottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin:auto;
+}
+.searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+    background-color: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.searchBox img{
+    width: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+}
+.searchBox img:hover{
+
+    background-color: #58585835;
+}
+.searchBox input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+}
+.searchBox div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main .bottomInfo{
+    font-size: 13px;
+    margin:15px auto;
+    text-align: center;
+    font-weight: 300;
+}

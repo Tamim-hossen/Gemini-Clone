@@ -1,0 +1,88 @@
+.sidebar{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:#6f6f6f30 ;
+    padding: 25px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.sidebar img{
+    width: 20px;
+}
+.sidebar .menu {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+.sidebar .menu:hover{
+    background-color: #28282821;   
+}
+.sidebar .menu:active{
+    background-color: #28282834;
+    border-radius: 8px;   
+}
+.sidebar .newChat {
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    background-color:#c0c0c075 ;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+    height: 30px;
+}
+.sidebar .newChat:hover{
+    background-color: rgba(0, 0, 0, 0.125);
+}
+.sidebar .newChat:active{
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+.sidebar .recent{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.sidebar .recentTitle{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.sidebar .recentEntry{
+    display: flex;
+    align-items: start;
+    flex-direction:initial;
+    gap:10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+    height: 20px;
+    margin-top: 10px;
+}
+.sidebar .name{
+    margin-top: 2px;
+}
+.sidebar .recentEntry:hover{
+    background-color: rgba(0, 0, 0, 0.059);
+}
+.sidebar .recentEntry:active{
+    background-color: rgba(0, 0, 0, 0.122);
+}
+.sidebar.bottom{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar .bottomItem{
+    padding-right: 10px;
+    cursor: pointer;
+}
